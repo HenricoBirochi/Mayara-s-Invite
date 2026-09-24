@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mayara · XV Anos</title>
+<meta name="description" content="Convite interativo para os 15 anos de Mayara Vaz Siqueira.">
+<meta name="theme-color" content="#a24159">
+
+<meta property="og:title" content="Mayara · XV Anos">
+<meta property="og:description" content="Você está convidado(a) para celebrar meus 15 anos.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Parisienne&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="is-locked">
+
+<!-- ═══════════ CAPA / ENVELOPE ═══════════ -->
+<div class="envelope-screen" id="envelopeScreen">
+  <div class="env-petals" id="envPetals" aria-hidden="true"></div>
+
+  <div class="envelope-wrap">
+    <button class="envelope" id="envelopeBtn" type="button" aria-label="Clique no selo para abrir o convite">
+      <div class="env-back"></div>
+      <div class="env-body"></div>
+      <div class="env-letter">
+        <span class="env-letter-script">Mayara</span>
+        <span class="env-letter-sub">XV anos</span>
+      </div>
+      <div class="env-flap"></div>
+      <div class="env-cover-content">
+        <span class="env-kicker">um convite especial</span>
+        <span class="env-cover-name">Mayara</span>
+        <span class="env-cover-rule" aria-hidden="true"></span>
+        <span class="env-cover-date">07 · 03 · 2027</span>
+      </div>
+      <div class="env-seal">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="47" class="seal-ring-outer"/>
+          <circle cx="50" cy="50" r="41" class="seal-ring-inner"/>
+          <path d="M50 5v8M50 87v8M5 50h8M87 50h8" class="seal-tick"/>
+          <text x="50" y="50" class="seal-letter">M</text>
+          <text x="50" y="20" class="seal-caption">XV</text>
+          <text x="50" y="82" class="seal-caption">ANOS</text>
+        </svg>
+      </div>
+    </button>
+    <p class="env-hint"><span>clique no selo</span><b>para abrir o convite</b></p>
+  </div>
+</div>
+
+<!-- ═══════════ CONTROLE DE MÚSICA ═══════════ -->
+<button class="music-btn" id="musicBtn" type="button" aria-label="Tocar música" hidden>
+  <span class="music-play" aria-hidden="true">
+    <svg class="music-icon music-icon-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10-6.5z"/></svg>
+    <svg class="music-icon music-icon-pause" viewBox="0 0 24 24"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>
+  </span>
+  <span class="music-copy">
+    <span class="music-label">Clique para ouvir</span>
+    <span class="music-title">Beauty and the Beast</span>
+  </span>
+  <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+</button>
+<!-- áudio local: só começa quando o visitante clica no player -->
+<audio class="audio-host" id="musicAudio" preload="metadata">
+  <source src="audios/Beauty_and_the_Beast_Instrumental.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ═══════════ CONTEÚDO ═══════════ -->
+<main class="site" id="site">
+
+  <!-- ── HERO ── -->
+  <header class="hero" id="hero">
+    <div class="hero-petals" id="heroPetals" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <p class="hero-kicker reveal">meus quinze anos</p>
+
+      <h1 class="hero-name reveal" data-delay="1">Mayara</h1>
+
+      <div class="hero-xv reveal" data-delay="2">
+        <span class="xv-rule" aria-hidden="true"></span>
+        <span class="xv-text">XV anos</span>
+        <span class="xv-rule" aria-hidden="true"></span>
+      </div>
+
+      <p class="hero-full reveal" data-delay="3">Mayara Vaz Siqueira</p>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span class="scroll-cue-line"></span>
+      <span class="scroll-cue-text">role para ver</span>
+    </div>
+  </header>
+
+  <!-- ── CONVITE ── -->
+  <section class="sec sec-convite">
+    <div class="wrap">
+      <div class="flourish reveal" aria-hidden="true">
+        <svg viewBox="0 0 200 24"><path d="M2 12h60M138 12h60M100 4c-8 0-12 4-12 8s4 8 12 8 12-4 12-8-4-8-12-8z" /><circle cx="70" cy="12" r="2"/><circle cx="130" cy="12" r="2"/></svg>
+      </div>
+
+      <blockquote class="convite-quote reveal">
+        Você pode sonhar, criar, desenhar e construir o lugar mais
+        maravilhoso do mundo. Mas é necessário ter pessoas para
+        transformar seu sonho em realidade.
+      </blockquote>
+
+      <p class="convite-autor reveal" data-delay="1">Walt Disney</p>
+
+      <p class="convite-text reveal" data-delay="2">
+        E você é uma dessas pessoas. Venha comemorar comigo
+        a noite em que o meu sonho vira realidade.
+      </p>
+
+      <p class="convite-sign reveal" data-delay="3">Mayara</p>
+    </div>
+  </section>
+
+  <!-- ── DATA E LOCAL ── -->
+  <section class="sec sec-data" id="data">
+    <div class="wrap">
+      <p class="sec-eyebrow reveal">que será realizado no dia</p>
+
+      <div class="date-block reveal" data-delay="1">
+        <div class="date-cell">
+          <span class="date-num" data-date="dia">07</span>
+        </div>
+        <span class="date-sep" aria-hidden="true"></span>
+        <div class="date-cell">
+          <span class="date-num" data-date="mes">03</span>
+        </div>
+      </div>
+
+      <p class="date-weekday reveal" data-delay="2" data-date="extenso">domingo, 7 de março de 2027</p>
+
+      <p class="date-venue reveal" data-delay="3">
+        das <strong data-date="hora">19h00</strong> às <strong data-date="horaFim">01h00</strong><br>
+        no <strong data-venue="nome">Palacete Rosa</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ── CONTAGEM REGRESSIVA ── -->
+  <section class="sec sec-count" id="contagem">
+    <div class="wrap">
+      <h2 class="count-title reveal">
+        <span class="count-title-a">contagem</span>
+        <span class="count-title-b">regressiva</span>
+      </h2>
+
+      <div class="count-grid reveal" data-delay="1" id="countdown" role="timer" aria-live="off">
+        <div class="count-item"><span class="count-num" id="cdDias">00</span><span class="count-lbl">dias</span></div>
+        <div class="count-item"><span class="count-num" id="cdHoras">00</span><span class="count-lbl">horas</span></div>
+        <div class="count-item"><span class="count-num" id="cdMin">00</span><span class="count-lbl">min</span></div>
+        <div class="count-item"><span class="count-num" id="cdSeg">00</span><span class="count-lbl">seg</span></div>
+      </div>
+
+      <p class="count-done" id="countDone" hidden>É hoje! Te espero para comemorar. ♥</p>
+    </div>
+  </section>
+
+  <!-- ── BOTÕES INTERATIVOS ── -->
+  <section class="sec sec-menu" id="menu">
+    <div class="wrap">
+      <p class="sec-eyebrow reveal">clique nos botões para interagir</p>
+
+      <div class="menu-grid">
+        <button class="menu-card reveal" data-modal="local" type="button">
+          <span class="menu-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          </span>
+          <span class="menu-txt"><em>local do</em><b>evento</b></span>
+        </button>
+
+        <button class="menu-card reveal" data-delay="1" data-modal="rsvp" type="button">
+          <span class="menu-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          <span class="menu-txt"><em>confirme</em><b>presença</b></span>
+        </button>
+
+        <button class="menu-card reveal" data-delay="2" data-modal="presentes" type="button">
+          <span class="menu-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 11h18v9H3z"/><path d="M2 7h20v4H2z"/><path d="M12 7v13"/><path d="M12 7S9.5 3 7.5 4.5 10 7 12 7zM12 7s2.5-4 4.5-2.5S14 7 12 7z"/></svg>
+          </span>
+          <span class="menu-txt"><em>sugestão</em><b>de presentes</b></span>
+        </button>
+
+        <button class="menu-card reveal" data-delay="3" data-modal="manual" type="button">
+          <span class="menu-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 4h9a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M20 4h-4v13.5H18A2 2 0 0 1 20 19.5z"/></svg>
+          </span>
+          <span class="menu-txt"><em>manual do</em><b>convidado</b></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TRAJE ── -->
+  <section class="sec sec-traje" id="traje">
+    <div class="wrap">
+      <div class="traje-card reveal">
+        <span class="traje-eyebrow">dress code</span>
+        <p class="traje-main">Esporte Fino</p>
+        <p class="traje-note">Venha bonito(a) e confortável — a noite vai ser longa e cheia de dança.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALERIA ── -->
+  <section class="sec sec-galeria" id="galeria">
+    <div class="wrap">
+      <h2 class="sec-title reveal">momentos</h2>
+      <div class="galeria-grid" id="galeriaGrid"></div>
+    </div>
+  </section>
+
+  <!-- ── RODAPÉ ── -->
+  <footer class="rodape">
+    <div class="wrap">
+      <p class="rodape-script reveal">Te espero lá!</p>
+      <p class="rodape-name reveal" data-delay="1">Mayara Vaz Siqueira</p>
+      <span class="rodape-rule reveal" data-delay="2" aria-hidden="true"></span>
+      <p class="rodape-mini reveal" data-delay="3">XV anos · <span data-date="curta">07.03.2027</span></p>
+    </div>
+  </footer>
+</main>
+
+<!-- ═══════════ MODAIS ═══════════ -->
+<div class="modal-root" id="modalRoot" hidden>
+  <div class="modal-backdrop" data-close></div>
+
+  <!-- LOCAL -->
+  <div class="modal" id="modal-local" role="dialog" aria-modal="true" aria-labelledby="t-local" hidden>
+    <button class="modal-x" type="button" data-close aria-label="Fechar">&times;</button>
+    <span class="modal-eyebrow">onde vai ser</span>
+    <h3 class="modal-title" id="t-local">Local do evento</h3>
+    <div class="modal-body">
+      <p class="local-nome" data-venue="nome">Palacete Rosa</p>
+      <p class="local-end" data-venue="endereco">Rua Bom Pastor, 801 - Ipiranga, São Paulo - SP</p>
+      <p class="local-hora">Das <strong data-date="hora">19h00</strong> às <strong data-date="horaFim">01h00</strong></p>
+      <a class="btn-ouro" id="mapaLink" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        Abrir no Google Maps
+      </a>
+      <a class="btn-linha" id="agendaLink" href="#" download="mayara-15-anos.ics">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v16H4z"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>
+        Salvar na agenda
+      </a>
+    </div>
+  </div>
+
+  <!-- RSVP -->
+  <div class="modal" id="modal-rsvp" role="dialog" aria-modal="true" aria-labelledby="t-rsvp" hidden>
+    <button class="modal-x" type="button" data-close aria-label="Fechar">&times;</button>
+    <span class="modal-eyebrow">sua resposta importa</span>
+    <h3 class="modal-title" id="t-rsvp">Confirme presença</h3>
+    <div class="modal-body">
+      <p class="modal-intro">Confirme até <strong data-date="prazo">30 de novembro</strong>. É rapidinho — a mensagem abre pronta no WhatsApp.</p>
+
+      <form class="form" id="rsvpForm" novalidate>
+        <label class="campo">
+          <span class="campo-lbl">Seu nome</span>
+          <input type="text" name="nome" id="rsvpNome" required autocomplete="name" placeholder="Nome e sobrenome">
+        </label>
+
+        <fieldset class="campo campo-radio">
+          <legend class="campo-lbl">Você vai?</legend>
+          <div class="radio-row">
+            <label class="radio"><input type="radio" name="presenca" value="sim" checked><span>Sim, eu vou! ♥</span></label>
+            <label class="radio"><input type="radio" name="presenca" value="nao"><span>Não poderei ir</span></label>
+          </div>
+        </fieldset>
+
+        <label class="campo" id="campoQtd">
+          <span class="campo-lbl">Quantas pessoas (incluindo você)</span>
+          <input type="number" name="qtd" id="rsvpQtd" min="1" max="10" value="1" inputmode="numeric">
+        </label>
+
+        <label class="campo">
+          <span class="campo-lbl">Recado para a Mayara <i>(opcional)</i></span>
+          <textarea name="recado" id="rsvpRecado" rows="3" placeholder="Deixe um carinho..."></textarea>
+        </label>
+
+        <p class="form-erro" id="rsvpErro" hidden></p>
+
+        <button class="btn-ouro btn-full" type="submit">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-3.2-6.4"/><path d="M4 20l1.4-4.1"/></svg>
+          Enviar no WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- PRESENTES -->
+  <div class="modal" id="modal-presentes" role="dialog" aria-modal="true" aria-labelledby="t-presentes" hidden>
+    <button class="modal-x" type="button" data-close aria-label="Fechar">&times;</button>
+    <span class="modal-eyebrow">sugestão de</span>
+    <h3 class="modal-title" id="t-presentes">Presentes</h3>
+    <div class="modal-body">
+      <p class="modal-intro">Se você quiser me presentear, deixo aqui algumas ideias que vão me deixar muito feliz.</p>
+
+      <ul class="presentes-lista" id="presentesLista"></ul>
+
+      <div class="pix-card" id="pixCard" hidden>
+        <span class="pix-lbl">chave pix</span>
+        <p class="pix-valor" id="pixValor"></p>
+        <button class="btn-linha btn-full" type="button" id="pixCopiar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 9h11v11H9z"/><path d="M5 15H4V4h11v1"/></svg>
+          <span id="pixCopiarTxt">Copiar chave</span>
+        </button>
+      </div>
+
+      <p class="presentes-nota">
+        Mas lembre-se:<br>
+        <strong>o mais importante é a sua presença!</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- MANUAL -->
+  <div class="modal" id="modal-manual" role="dialog" aria-modal="true" aria-labelledby="t-manual" hidden>
+    <button class="modal-x" type="button" data-close aria-label="Fechar">&times;</button>
+    <span class="modal-eyebrow">para tudo sair perfeito</span>
+    <h3 class="modal-title" id="t-manual">Manual do convidado</h3>
+    <div class="modal-body">
+      <ol class="manual" id="manualLista"></ol>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
