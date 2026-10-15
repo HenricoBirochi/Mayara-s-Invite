@@ -124,8 +124,7 @@ const CONFIG = {
     // Nomes
     $$('.hero-name, .convite-sign').forEach(el => el.textContent = CONFIG.nome);
     $$('.hero-full, .rodape-name').forEach(el => el.textContent = CONFIG.nomeCompleto);
-    $('.env-letter-script').textContent = CONFIG.nome;
-    $('.seal-letter').textContent = CONFIG.nome.charAt(0).toUpperCase();
+    $('#envelopeBtn').setAttribute('aria-label', `Abrir o convite de ${CONFIG.nome}`);
     document.title = `${CONFIG.nome} · XV Anos`;
 
     // Mapa
@@ -267,23 +266,24 @@ const CONFIG = {
     const site = $('#site');
     let aberto = false;
 
-    petalas($('#envPetals'), 14);
-
     const abrir = () => {
       if (aberto) return;
       aberto = true;
 
-      btn.classList.add('is-open');
-      $('.env-hint').style.opacity = '0';
+      $('#envelopeCard').classList.add('is-open');
+      btn.disabled = true;
 
       setTimeout(() => {
         tela.classList.add('is-gone');
         document.body.classList.remove('is-locked');
+        site.inert = false;
+        $('#musicBtn').inert = false;
         site.classList.add('is-in');
         revelar();
-      }, semMovimento ? 100 : 950);
+        $('.hero-name').focus({ preventScroll: true });
+      }, semMovimento ? 0 : 1050);
 
-      setTimeout(() => { tela.hidden = true; }, 2200);
+      setTimeout(() => { tela.hidden = true; }, semMovimento ? 50 : 1800);
     };
 
     btn.addEventListener('click', abrir);

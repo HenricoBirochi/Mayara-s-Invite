@@ -1,0 +1,4 @@
+Ferramenta: geração de imagens integrada (image_gen).
+Imagem de referência: lacre dourado do site https://liebedesignafetivo.com.br/conviteisabella15anos/
+
+Use case: precise-object-edit. Asset type: transparent wax seal PNG for a birthday invitation website. Input image is the edit target. Change ONLY the embossed calligraphic capital I at the center into an ornate calligraphic capital M for Mayara, in the same embossed gold material with realistic raised edges and highlights. Keep the exact irregular round gold wax rim, inner circular indentation, golden wax texture, lighting and proportions. The M must be clearly readable, elegant and centered inside the circle. Transparent background, no white background, no shadow outside the seal silhouette, no other lettering, no additional objects. Output square 1024x1024.

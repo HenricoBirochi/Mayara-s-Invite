@@ -81,7 +81,7 @@ assets/fotos/     suas fotos
 
 ## O que o convite faz
 
-- **Envelope de abertura** com lacre e carta que sobe ao clicar
+- **Envelope de abertura** com papel texturizado, rosas e lacre dourado com a inicial M; as folhas se abrem ao tocar no selo
 - **Capa** com o nome em manuscrito e pétalas de rosa caindo
 - **Frase do Walt Disney** em destaque
 - **Data e local** em destaque
@@ -105,3 +105,9 @@ assets/fotos/     suas fotos
 
 É um site estático: sobe em GitHub Pages, Netlify, Vercel ou qualquer
 hospedagem, arrastando a pasta inteira.
+
+### Arte da entrada
+
+A composição segue a [referência fornecida](https://liebedesignafetivo.com.br/conviteisabella15anos/): papel ornamental e rosas vermelhas ao redor do lacre. As imagens ficam em `assets/envelope-pergaminho.jpg`, `assets/envelope-rosas.png` e `assets/lacre-mayara.png`. O lacre é uma imagem personalizada para Mayara; para mudar a inicial, substitua esse arquivo.
+
+A abertura funciona por toque, clique e teclado e respeita a preferência por movimento reduzido.

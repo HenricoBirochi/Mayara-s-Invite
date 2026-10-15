@@ -14,46 +14,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Parisienne&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/envelope-pergaminho.jpg">
 <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body class="is-locked">
 
 <!-- ═══════════ CAPA / ENVELOPE ═══════════ -->
-<div class="envelope-screen" id="envelopeScreen">
-  <div class="env-petals" id="envPetals" aria-hidden="true"></div>
-
-  <div class="envelope-wrap">
-    <button class="envelope" id="envelopeBtn" type="button" aria-label="Clique no selo para abrir o convite">
-      <div class="env-back"></div>
-      <div class="env-body"></div>
-      <div class="env-letter">
-        <span class="env-letter-script">Mayara</span>
-        <span class="env-letter-sub">XV anos</span>
-      </div>
-      <div class="env-flap"></div>
-      <div class="env-cover-content">
-        <span class="env-kicker">um convite especial</span>
-        <span class="env-cover-name">Mayara</span>
-        <span class="env-cover-rule" aria-hidden="true"></span>
-        <span class="env-cover-date">07 · 03 · 2027</span>
-      </div>
-      <div class="env-seal">
-        <svg viewBox="0 0 100 100" aria-hidden="true">
-          <circle cx="50" cy="50" r="47" class="seal-ring-outer"/>
-          <circle cx="50" cy="50" r="41" class="seal-ring-inner"/>
-          <path d="M50 5v8M50 87v8M5 50h8M87 50h8" class="seal-tick"/>
-          <text x="50" y="50" class="seal-letter">M</text>
-          <text x="50" y="20" class="seal-caption">XV</text>
-          <text x="50" y="82" class="seal-caption">ANOS</text>
-        </svg>
-      </div>
+<div class="envelope-screen" id="envelopeScreen" role="region" aria-label="Envelope do convite de Mayara">
+  <div class="envelope" id="envelopeCard">
+    <div class="env-panel env-panel-right" aria-hidden="true"></div>
+    <div class="env-panel env-panel-left" aria-hidden="true"></div>
+    <div class="env-flowers" aria-hidden="true">
+      <img class="env-rose env-rose-top" src="assets/envelope-rosas.png" alt="" fetchpriority="high">
+      <img class="env-rose env-rose-bottom" src="assets/envelope-rosas.png" alt="">
+    </div>
+    <button class="env-seal" id="envelopeBtn" type="button" aria-label="Abrir o convite de Mayara" aria-controls="site">
+      <img src="assets/lacre-mayara.png" alt="" width="1024" height="1024" fetchpriority="high">
     </button>
-    <p class="env-hint"><span>clique no selo</span><b>para abrir o convite</b></p>
   </div>
 </div>
 
 <!-- ═══════════ CONTROLE DE MÚSICA ═══════════ -->
-<button class="music-btn" id="musicBtn" type="button" aria-label="Tocar música" hidden>
+<button class="music-btn" id="musicBtn" type="button" aria-label="Tocar música" hidden inert>
   <span class="music-play" aria-hidden="true">
     <svg class="music-icon music-icon-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10-6.5z"/></svg>
     <svg class="music-icon music-icon-pause" viewBox="0 0 24 24"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>
@@ -70,7 +52,7 @@
 </audio>
 
 <!-- ═══════════ CONTEÚDO ═══════════ -->
-<main class="site" id="site">
+<main class="site" id="site" inert>
 
   <!-- ── HERO ── -->
   <header class="hero" id="hero">
@@ -80,7 +62,7 @@
     <div class="hero-inner">
       <p class="hero-kicker reveal">meus quinze anos</p>
 
-      <h1 class="hero-name reveal" data-delay="1">Mayara</h1>
+      <h1 class="hero-name reveal" data-delay="1" tabindex="-1">Mayara</h1>
 
       <div class="hero-xv reveal" data-delay="2">
         <span class="xv-rule" aria-hidden="true"></span>
